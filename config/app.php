@@ -168,6 +168,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // 追記
+        App\Providers\PasswordServiceProvider::class,
     ])->toArray(),
 
     /*

@@ -15,6 +15,7 @@ class PasswordServiceProvider extends PasswordResetServiceProvider
         $this->app->singleton(
             'auth.password',
             function (Application $app) {
+                // 独自のパスワードブローカーマネージャを指定する
                 return new PasswordManager($app);
             }
         );
